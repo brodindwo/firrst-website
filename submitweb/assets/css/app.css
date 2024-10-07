@@ -1,0 +1,370 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+header.navbar-container {
+    width: 100%;
+    max-width: 900px;
+    padding-block: 1rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    z-index: 9999;
+    position: sticky;
+    top: 0;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list .important a {
+    border-radius: 999px;
+    padding: 0.5rem 1.5rem;
+    border: 3px solid gold;
+}
+
+header.navbar-container .nav-list .important:hover a {
+    background-color: gold;
+    border-radius: 999px;
+    padding: 0.5rem 1.5rem;
+    color: black;
+    border: 3px solid ;
+}
+
+header.navbar-container .nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: white;
+
+    transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+    background-color: gold;
+    color: black;
+}
+
+main {
+    width: 100%;
+    max-width: 900px;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    align-items: center;
+    background-color: black;
+}
+
+main .content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+main .content .content-description {
+    flex: 1;
+}
+
+main .content .content-description .tittle {
+    margin-block: 1rem;
+    font-size: 3.5rem;
+}
+
+main .content .content-description h2 {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+}
+
+main .content .content-description p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+main .content .content-description button {
+    font-size: 1.1rem;
+    padding: 0.8rem 2.5rem;
+    border: 3px solid transparent;
+    border-radius: 99px;
+    margin-block-start: 1rem;
+    background-color: gold;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+
+}
+
+main .content .content-description button:hover {
+    border: 3px solid;
+    background-color: transparent;
+    color: gold;
+}
+
+
+main .content .content-image {
+    flex: 1;
+    display: flex;
+}
+
+main .content .content-image img {
+    /*width: 300px;*/
+    /*min-width: 250px;*/
+    margin: auto;
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+main .service-title {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+main .service-title h1 {
+    flex: 1;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.services-description {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.services-description img {
+    margin: auto;
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    order: -1;
+    border: solid gold;
+}
+
+/*
+.services-description .items {
+    display: flex;
+    background-color: aqua;
+    justify-content: space-between;
+    align-items: center;
+    
+}    
+*/
+
+.services-description .items-1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-description .items-2 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-description .items-3 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-description h1 {
+    margin-block: 1rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.services-description p {
+    margin: 1rem;
+    text-align: center;
+}
+
+.services-description i {
+    font-size: 3rem;
+    order: -1;
+}
+
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+
+main aside .social-media {
+    height: 100%;
+    display: flex;
+}
+
+main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin: auto;
+    background-color: #2d3e50;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+main aside .social-media li {
+    list-style-type: none;
+}
+
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+
+    transition: all 0.1s ease-in-out;
+}
+
+main aside .social-media li a:hover {
+    color: #89b0d9;
+}
+
+main .cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+main .cta button {
+    font-size: 1.1rem;
+    padding: 0.8rem 2.5rem;
+    border: 3px solid transparent;
+    border-radius: 99px;
+    margin-block-start: 1rem;
+    background-color: gold;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+main .cta button:hover {
+    background-color: transparent;
+    border: 3px solid ;
+    color: gold;
+}
+
+footer {
+    padding-block: 1rem;
+    color: white;
+    background-color: black;
+    align-items: center;
+    font-weight: bold;
+    max-width: 900px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    margin-inline: auto;
+    justify-content: space-around;
+}
+
+/* medium devices (768px & dibawahnya) */
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+        flex-direction: column;
+    }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+    }
+
+    main {
+        padding: 1rem 3rem;
+    }
+
+    main .content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    main .content .content-description .tittle {
+        font-size: 2.5rem;
+    }
+
+    main .content .content-description p {
+        font-size: 1rem;
+    }
+
+    main .content .content-image {
+        order: -1;
+    }
+
+    .service-title {
+        padding: 1rem 3rem;
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .service-title h1 {
+        font-size: 1rem;
+    }
+
+    .services-description {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .services-description p {
+        text-align: center;
+    }
+
+    main .cta h2 {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        padding: 1rem 3rem;
+        text-align: center;
+    }    
+}
